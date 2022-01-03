@@ -1,0 +1,546 @@
+.logo
+{
+  height: 120px;
+  width: 210px;
+  background: url("../../images/Img.png")no-repeat;
+  position: relative;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .left-container {
+    position: relative;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("../../images/Gucii.png") no-repeat;
+    background-size: cover;
+
+    .intro-message {
+      position: relative;
+      z-index: 2;
+
+      h1,h2 {
+        color: white;
+        font-weight: bold;
+      }
+
+      h1 {
+        font-size: 50px;
+        margin-bottom: 0.25rem;
+      }
+
+      h2 {
+        margin-top: 0.25rem;
+      }
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      background: rgba(103, 207, 197, .7);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  .right-container {
+    width: 55%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .inner-form {
+      .welcome-title-form {
+        h2 {
+          margin-bottom: 0.25rem;
+        }
+
+        span {
+          color: #7d7d7d;
+          margin-right: 10px;
+        }
+      }
+
+      .form-inputs {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.btn {
+  position: relative;
+
+  &.btn-primary {
+    width: 305px;
+    height: 50px;
+    background: #41ad9e;
+    font-size: 15px;
+    color: white;
+  }
+}
+
+a:hover, a:visited, a:link, a:active
+{
+  text-decoration: none;
+  font-weight: bold;
+  color: #0064d7;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    .left-container {
+      display: none;
+    }
+
+    .right-container {
+      width: 100%;
+    }
+  }
+}
+
+//.container4
+//{
+//  color: black;
+//  position: relative;
+//  top: -20px;
+//}
+//.container5
+//{
+//  color: grey;
+//  position: relative;
+//  top: -40px;
+//}
+//.container6
+//{
+//  position: relative;
+//  top: -60px;
+//  left: 180px;
+//  cursor: pointer;
+//  z-index: 1;
+//}
+/*
+
+a:hover, a:visited, a:link, a:active
+{
+  text-decoration: none;
+  font-weight: bold;
+  color: #0064d7;
+}
+.container7
+{
+  position: relative;
+  top: -80px;
+}
+.txt
+{
+  color: #898989;
+}
+.imput{
+  width: 296px;
+  height: 40px;
+  color: 	black;
+  padding-inline: 20px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.cnopca
+{
+  position: relative;
+  top: 30px;
+  width: 340px;
+  height: 50px;
+  background: #41ad9e;
+  color: white;
+  border-radius: 10px;
+  border: #41ad9e;
+}
+body
+{
+  padding: 0;
+  margin: 0;
+}
+.moto
+{
+  position: relative;
+  top: 40vh;
+  left: 20vh;
+  color: white;
+}
+.t02
+{
+  position: relative;
+  top: -50px;
+}
+
+.continut
+{
+  color: white;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
+  line-height: 1.5;
+  background: rgba(103, 207, 197, .7);
+  display: flex;
+  align-items: center;
+}
+.continut h1
+{
+  position: relative;
+  letter-spacing: 3px;
+  font-size: 55px;
+  left: 300px;
+
+}
+.continut h3
+{
+  position: relative;
+  top: -25px;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+.link
+{
+  position: relative;
+  top: 6px;
+  left: -98px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.styleimp
+{
+  position: relative;
+  width: 305px;
+  height: 2px;
+  font-size: 15px;
+}
+
+.btn {
+  position: relative;
+
+  &.btn-primary {
+    width: 305px;
+    height: 50px;
+    background: #41ad9e;
+    font-size: 15px;
+    color: white;
+  }
+}
+
+.container2
+{
+  width: 57%;
+  height: 100vh;
+  float: right;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container3
+{
+  width: 28%;
+  height: 57.5vh;
+  background: greenyellow;
+}
+.container1
+{
+  width: 43%;
+  height:100vh;
+  float: left;
+  color: white;
+  display: flex;
+  background: url("../../images/Gucii.png") no-repeat;
+  background-size: 100% 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.container
+{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 43% 57%;
+  grid-template-areas:
+  "m1 m2";
+}
+.m1{
+  grid-area: m1;
+  height:100vh;
+  float: left;
+  color: white;
+  display: flex;
+  background: url("../../images/Gucii.png")no-repeat;
+  background-size: 100% 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.m2{ grid-area: m2;}
+.m3
+{
+  position: relative;
+  width: 26%;
+  height: 52vh;
+  margin: auto;
+  top: 25%;
+}
+@media only screen and (max-width: 2560px) {
+  .mono
+  {
+    position: relative;
+    left: 100px;
+  }
+  .container6
+  {
+    position: relative;
+    top: -59px;
+    left: 180px;
+  }
+}
+@media only screen and (max-width: 1440px){
+  .container4
+  {
+    top: -17px;
+    font-size: 16px;
+  }
+  .continut h1
+  {
+    left: 180px;
+  }
+  .m3
+  {
+    width: 35%;
+    height: 60.7vh;
+  }
+  .container5
+  {
+    font-size: 16px;
+  }
+  .styleimp
+  {
+    width: 285px;
+    font-size: 13px;
+  }
+  .button1
+  {
+    width: 286px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container
+  {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 44% 66%;
+    grid-template-areas:
+  "m1 m2";
+  }
+  .continut
+  {
+    height: 110vh;
+  }
+  .continut h1
+  {
+    position: relative;
+    left: 30px;
+  }
+  .m1
+  {
+    height: 110vh;
+    background-size: 100% 110vh;
+  }
+  .m3
+  {
+    position: relative;
+    left: -10px;
+    width: 39%;
+    height: 60vh;
+  }
+  .container4
+  {
+    font-size: 15px;
+  }
+  .styleimp
+  {
+    width: 262px;
+  }
+  .button1
+  {
+    width: 262px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .container
+  {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 60%;
+    grid-template-areas:
+  "m1 m2";
+  }
+  .m3
+  {
+    position: relative;
+    left: -47px;
+    width: 47%;
+    height: 58.5vh;
+  }
+  .container4
+  {
+    font-size: 12px;
+  }
+  .logo
+  {
+    left: 5px;
+  }
+  .container5
+  {
+    font-size: 14px;
+    top: -39px;
+  }
+  .styleimp
+  {
+    width: 215px;
+    font-size: 13px;
+  }
+  .button1
+  {
+    width: 215px;
+  }
+  .container6
+  {
+    position: relative;
+    left: 163px;
+    top: -54px;
+    font-size: 12px;
+  }
+  .continut h1
+  {
+    position: relative;
+    left: 20px;
+  }
+  .continut h3
+  {
+    position: relative;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    display: grid;
+    height: 160vh;
+    grid-template-columns: 140%;
+    grid-template-areas: "m2";
+  }
+
+  .m1 {
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    visibility: hidden;
+  }
+
+  .m3 {
+    position: relative;
+    width: 50%;
+    height: 61.5vh;
+  }
+
+  .logo
+  {
+    position: relative;
+    left: 45px;
+  }
+  .container4
+  {
+    font-size: 17px;
+  }
+  .container6
+  {
+    position: relative;
+    top: -58px;
+    left: 180px;
+    font-size: 16px;
+  }
+  .container5
+  {
+    position: relative;
+    font-size: 16px;
+
+  }
+  .styleimp
+  {
+    width: 297px;
+  }
+  .button1
+  {
+    width: 297px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 180%;
+    grid-template-areas: "m2";
+  }
+  .m3
+  {
+    position: relative;
+    left: -11px;
+    width: 50%;
+    height: 63vh;
+  }
+  .container4
+  {
+    font-size: 19px;
+  }
+  .container5
+  {
+    font-size: 21px;
+  }
+  .container6
+  {
+    position: absolute;
+    top: 162px;
+    left: 235px;
+    font-size: 21px;
+  }
+  .styleimp
+  {
+    width: 337px;
+  }
+  .button1
+  {
+    width: 337px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .m3
+  {
+    position: relative;
+    width: 58.5%;
+    height: 63.4vh;
+  }
+}
+*/
